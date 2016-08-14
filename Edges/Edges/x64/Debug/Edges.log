@@ -1,0 +1,47 @@
+﻿Build started 13/08/2016 04:31:34 p.m..
+     1>Project "C:\Users\Drake\Desktop\Edges\Edges\Edges.vcxproj" on node 2 (Rebuild target(s)).
+     1>CudaClean:
+         cmd.exe /C "C:\Users\Drake\AppData\Local\Temp\tmp62ff65aa1b5b4e598f973e0800f77459.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -IC:\opencv\build\include -IC:\opencv\build\include\opencv -IC:\opencv\build\include\opencv2 -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile   -Xcompiler "/openmp"  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\Drake\Desktop\Edges\Edges\kernel.cu" -clean
+         
+         C:\Users\Drake\Desktop\Edges\Edges>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -IC:\opencv\build\include -IC:\opencv\build\include\opencv -IC:\opencv\build\include\opencv2 -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile   -Xcompiler "/openmp"  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\Drake\Desktop\Edges\Edges\kernel.cu" -clean 
+         kernel.cu
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /DWIN64 /D_DEBUG /D_CONSOLE /D_MBCS /IC:\opencv\build\include /IC:\opencv\build\include\opencv /IC:\opencv\build\include\opencv2 /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I. /FIcuda_runtime.h /c C:\Users\Drake\Desktop\Edges\Edges\kernel.cu 
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\Drake\AppData\Local\Temp\tmp6368b90916a94d1594001bc0ef7d52c5.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -IC:\opencv\build\include -IC:\opencv\build\include\opencv -IC:\opencv\build\include\opencv2 -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -Xcompiler "/openmp"  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\Drake\Desktop\Edges\Edges\kernel.cu"
+         
+         C:\Users\Drake\Desktop\Edges\Edges>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -IC:\opencv\build\include -IC:\opencv\build\include\opencv -IC:\opencv\build\include\opencv2 -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -Xcompiler "/openmp"  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\Drake\Desktop\Edges\Edges\kernel.cu" 
+     1>c:\opencv\build\include\opencv2\flann\lsh_table.h(220): warning : statement is unreachable
+     1>c:\opencv\build\include\opencv2\flann\lsh_table.h(225): warning : statement is unreachable
+     1>c:\opencv\build\include\opencv2\flann\lsh_table.h(234): warning : statement is unreachable
+     1>c:\opencv\build\include\opencv2\flann\index_testing.h(248): warning : variable "p1" was set but never used
+     1>C:\opencv\build\include\opencv2/flann/flann.hpp(257): warning : missing return statement at end of non-void function "cv::flann::Index_<T>::veclen"
+     1>C:\opencv\build\include\opencv2/flann/flann.hpp(263): warning : missing return statement at end of non-void function "cv::flann::Index_<T>::size"
+     1>C:\opencv\build\include\opencv2/flann/flann.hpp(270): warning : missing return statement at end of non-void function "cv::flann::Index_<T>::getParameters"
+     1>C:\opencv\build\include\opencv2/flann/flann.hpp(276): warning : missing return statement at end of non-void function "cv::flann::Index_<T>::getIndexParameters"
+     1>C:\opencv\build\include\opencv2/flann/flann.hpp(362): warning : missing return statement at end of non-void function "cv::flann::Index_<T>::radiusSearch(const std::vector<cv::flann::Index_<T>::ElementType, std::allocator<cv::flann::Index_<T>::ElementType>> &, std::vector<int, std::allocator<int>> &, std::vector<cv::flann::Index_<T>::DistanceType, std::allocator<cv::flann::Index_<T>::DistanceType>> &, cv::flann::Index_<T>::DistanceType, const cvflann::SearchParams &)"
+     1>C:\opencv\build\include\opencv2/flann/flann.hpp(381): warning : missing return statement at end of non-void function "cv::flann::Index_<T>::radiusSearch(const cv::Mat &, cv::Mat &, cv::Mat &, cv::flann::Index_<T>::DistanceType, const cvflann::SearchParams &)"
+     1>C:\opencv\build\include\opencv2/flann/flann.hpp(421): warning : missing return statement at end of non-void function "cv::flann::hierarchicalClustering<ELEM_TYPE,DIST_TYPE>(const cv::Mat &, cv::Mat &, const cvflann::KMeansIndexParams &)"
+     1>C:\opencv\build\include\opencv2/core/affine.hpp(282): warning : controlling expression is constant
+         kernel.cu
+     1>C:/Users/Drake/Desktop/Edges/Edges/kernel.cu(86): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:/Users/Drake/Desktop/Edges/Edges/kernel.cu(117): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Drake\Desktop\Edges\x64\Debug\Edges.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\opencv\build\x64\vc12\lib /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\x64" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib opencv_calib3d2413d.lib opencv_contrib2413d.lib opencv_core2413d.lib opencv_features2d2413d.lib opencv_flann2413d.lib opencv_gpu2413d.lib opencv_highgui2413d.lib opencv_imgproc2413d.lib opencv_legacy2413d.lib opencv_ml2413d.lib opencv_nonfree2413d.lib opencv_objdetect2413d.lib opencv_ocl2413d.lib opencv_photo2413d.lib opencv_stitching2413d.lib opencv_superres2413d.lib opencv_ts2413d.lib opencv_video2413d.lib opencv_videostab2413d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Drake\Desktop\Edges\x64\Debug\Edges.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Drake\Desktop\Edges\x64\Debug\Edges.lib" /MACHINE:X64 x64\Debug\kernel.cu.obj
+         Edges.vcxproj -> C:\Users\Drake\Desktop\Edges\x64\Debug\Edges.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "C:\Users\Drake\Desktop\Edges\x64\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "C:\Users\Drake\Desktop\Edges\x64\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "C:\Users\Drake\Desktop\Edges\x64\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart32_75.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart64_75.dll
+                 2 archivo(s) copiado(s).
+     1>Done Building Project "C:\Users\Drake\Desktop\Edges\Edges\Edges.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.78
